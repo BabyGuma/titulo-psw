@@ -1,0 +1,36 @@
+<div class="contenedor1">
+    <form class = "form">
+        <img class="trapecio" src="..\assets\images\trapecio.png">
+        <div class="texto-encima"> Área de un trapecio</div>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+            
+        <div class="icon-bmenor">Base menor -> a</div>
+            <div class = "a-box">
+                <input type="number" [(ngModel)]="a" class = "data-input" name="a"/>
+            </div><br>
+
+            <div class="icon-bmayor">Base mayor -> b</div>
+            <div class = "b-box">
+                <input type="number" [(ngModel)]="b" class = "data-input" name="b"/>
+            </div><br>
+
+            <div class="icon-altura" >Altura -> h</div>
+            <div class="h-box">
+                <input type="number" [(ngModel)]="h" class = "data-input" name="h"/>
+            </div><br>
+
+            <div class = "Ecuacion-button">
+                <input type="submit" class="btn btn-green" value="Calcular" (click)="ecuacion()">
+            </div>
+    </form>
+</div>
+
+<div class="contenedor2">
+    <div id="result-box">
+        <div class="Ecuacion-container">
+            <div class="Ecuacion resultE"><span>Resultado = </span>{{ result }}</div>
+        </div>
+    </div>
+</div>
