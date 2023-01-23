@@ -1,7 +1,6 @@
-export function ecuacion(b1 : number, b2 : number, h : number){
-
+export function ecuacion(a : number, b : number, h : number){
+    
     let result = 0;
-    result = ((b1 + b2) * h)/2;
-
+    result = ((a + b) * h)/2;
     return result;
 }
